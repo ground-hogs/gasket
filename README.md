@@ -15,7 +15,7 @@ But hey, we'll get better.
 There's a caveat: `Gasket` only translates the JSX into viable JS, since this is the 1st part of what makes JSX in React so pleasant. 
 The 2nd one, though, is just as important for usability purposes, which is actually providing an usable "h" function translating this calls into proper HTML. 
 
-That is handled by another project of ours, called `Castella`. 
+That is handled by another project of ours, called [Castella][1]. 
 
 ## Usage
 
@@ -77,4 +77,6 @@ Since we have literally no idea wether this will work on older nodejs versions, 
 
 We also are missing support for namespaced JSX entities, mostly because we haven't ever seen someone actually using them. 
 
-Oh, and tests! It would be fairly cool to have tests in place. You know, so we can be sure this is usable with any degree of certainty. 
+Oh, and tests! It would be fairly cool to have tests in place. You know, so we can be sure this is usable with any degree of certainty.
+
+[1]: https://github.com/ground-hogs/castella
