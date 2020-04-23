@@ -1,3 +1,5 @@
+![Ground Hogs Magical Mystery Bannerthing](https://github.com/ground-hogs/ground-hogs.github.io/raw/master/assets/img/earthy-thing.png)
+
 # Gasket
 
 ## Introduction
