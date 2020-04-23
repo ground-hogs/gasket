@@ -10,7 +10,7 @@ const REGISTER_DEFAULTS = {
     extension: ".jsx",
     generatedExtension: ".jsx.js",
     cacheDir: tmpdir(),
-    h: "vdom.toString",
+    h: "Castella.Render",
     development: false
 };
 

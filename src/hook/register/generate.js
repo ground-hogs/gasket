@@ -58,10 +58,17 @@ module.exports = function generate(ast, {stringifier}) {
         }
         */
         JSXExpressionContainer (node, state) {
-            this[node.expression.type](node.expression, state);
+            if(node.type === "Literal"){
+                this.Literal(node,state);
+            }
+            else if(node.expression && this[node.expression.type]) {
+                this[node.expression.type](node.expression, state);
+            }
         },
         JSXText (node, state) {
-            state.output += node.value
+            const quoted = node.value.trim().replace(/([\"\'\`])/g, "\\$1");
+            node.raw = node.value = `"${quoted}"`;
+            this.Literal(node, state);
         }
     };
     
